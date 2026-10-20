@@ -7,15 +7,16 @@ description: Evaluate proposed features, user operations, modes, or behaviors du
 
 Use this skill when proposing or deciding whether to include a feature, user operation, mode, or behavior in requirements or design.
 
+This skill targets a single-user AI-agent design workflow.
+
 ## Core rule
 
 Make the incremental complexity of a proposed feature visible before recommending its inclusion.
 Prefer the simplest design that meets established requirements.
-Introduce optional behavior when its benefit justifies its complexity across the affected design.
 
 ## Evaluate the proposal
 
-When presenting a feature proposal:
+When evaluating a proposed feature:
 
 1. State the concrete need and expected benefit.
 2. Outline the implementation approach and its qualitative complexity relative to the simplest viable baseline.
@@ -35,7 +36,7 @@ For an explicitly requested feature with significant design effects, explain tho
 
 ## Responsibility boundary
 
-This skill owns the decision to introduce functionality and the explanation of its design-wide complexity during requirements and design.
+This skill owns evaluating proposed functionality for inclusion and explaining its design-wide complexity during requirements and design.
 `concept-introduction-threshold` owns whether named implementation concepts are justified.
 `defense-level` owns the required scope of defensive behavior.
 Domain requirements and repository sources of truth own the behavior the design must satisfy.
