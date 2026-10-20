@@ -1,6 +1,8 @@
 # Feature Introduction Threshold
 
-A lightweight skill for making the full design cost of a proposed feature visible before adopting it.
+A lightweight skill for making the design-wide complexity of a proposed feature visible before adopting it.
+
+This skill targets a single-user AI-agent design workflow.
 
 ## When to use
 
