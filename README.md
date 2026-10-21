@@ -11,6 +11,7 @@ Use this skill when proposing or deciding whether to include a feature, user ope
 ## Responsibility
 
 Evaluate the need and benefit of a proposed feature alongside the expected implementation complexity, effects on the wider design, and simpler alternatives.
+This includes proposals for recovery, retries, fallbacks, migrations, legacy-format support, and backward compatibility beyond established requirements.
 Prefer the smallest design that satisfies established requirements.
 The executable decision rules are in [SKILL.md](SKILL.md).
 
