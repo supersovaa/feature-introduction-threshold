@@ -14,14 +14,17 @@ This skill targets a single-user AI-agent design workflow.
 Make the incremental complexity of a proposed feature visible before recommending its inclusion.
 Prefer the simplest design that meets established requirements.
 
+Treat recovery, retries, fallback, migration, legacy-format support, and backward compatibility as feature proposals whenever they extend the established contract.
+Evaluate these proposals before adding their guarantees to requirements or design.
+
 ## Evaluate the proposal
 
 When evaluating a proposed feature:
 
-1. State the concrete need and expected benefit.
+1. State the concrete need and expected benefit, distinguishing established requirements from optional additions.
 2. Outline the implementation approach and its qualitative complexity relative to the simplest viable baseline.
 3. Identify meaningful downstream effects, such as additional states, transitions, failure handling, persistence, interactions with other features, and tests. Describe the effects actually relevant to the proposal.
-4. Compare with a simpler alternative, including omitting the feature from the initial design when viable.
+4. Compare with a simpler alternative, such as reporting a failure, rejecting unsupported older inputs, using a corresponding historical version, or omitting the feature when viable.
 5. Make consequential uncertainty explicit instead of implying a precise estimate.
 
 Evaluate the whole affected workflow, not just the visible control or isolated code change.
@@ -30,8 +33,11 @@ Keep the explanation proportional to the proposal; numerical scores, exact time 
 ## Decide inclusion
 
 Use established requirements and explicit user decisions as constraints.
+Preserve recovery and compatibility guarantees required by the authoritative contract.
+Treat existing artifacts, historical versions, and possible failures as inputs to evaluation rather than automatic commitments to new guarantees.
+
 Recommend optional features when their value warrants the added complexity, and otherwise favor the simpler design.
-Present optional additions for user decision rather than treating a suggestion as an accepted requirement.
+Present optional additions for user decision before adopting them in requirements or design.
 For an explicitly requested feature with significant design effects, explain those effects and any simpler alternatives that still satisfy the requirement.
 
 ## Responsibility boundary
