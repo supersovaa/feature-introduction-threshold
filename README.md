@@ -1,17 +1,17 @@
 # Feature Introduction Threshold
 
-A lightweight skill for deciding whether functional behavior earns its initial and continuing complexity.
+A lightweight skill for choosing the smallest useful functional scope, including whether an optional feature is worth proposing.
 
 This skill targets a single-user AI-agent design workflow.
 
 ## When to use
 
-Use this skill when deciding whether to introduce, retain, simplify, or remove a feature, user operation, mode, or behavior in requirements or design.
+Use this skill when defining or revising functional scope in requirements or design, including proposals to introduce, retain, simplify, or remove a feature, user operation, mode, or behavior.
 
 ## Responsibility
 
-Compare current user goals and benefits with whole-workflow implementation and continuing maintenance costs, then choose the simplest viable scope.
-This applies to proposed and already implemented behavior, including recovery, retries, fallbacks, migrations, legacy-format support, and backward compatibility.
+Screen optional functional proposals for concrete current value before raising them, accounting for the user's attention and decisions alongside implementation and ongoing maintenance.
+Choose the smallest viable scope for proposed or existing behavior, including recovery, retries, fallbacks, migrations, legacy-format support, and backward compatibility.
 Existing code, design, and tests describe the current state; current requirements and user decisions determine the target.
 
 The executable decision rules are in [SKILL.md](SKILL.md).
