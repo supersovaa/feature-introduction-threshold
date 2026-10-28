@@ -22,7 +22,7 @@ For the behavior under consideration:
 
 1. Identify the concrete user goal, current requirement, actual use, and expected benefit. Distinguish required guarantees from optional behavior.
 2. Compare introducing or retaining the behavior with simplifying or removing it. Consider the simplest viable alternative, such as reporting a failure, rejecting unsupported older inputs, using a corresponding historical version, or omitting an optional path.
-3. Compare the benefit with the whole-workflow cost: user attention, decision effort, and understanding of added contracts; implementation, testing, and continuing maintenance. Include one-time removal or transition work when material.
+3. Compare the benefit with the whole-workflow cost: user attention, decision effort, and understanding of added contracts; implementation and integration, additional code and states or branches, tests, future design changes, ongoing reviews, and other continuing maintenance. Include one-time removal or transition work when material.
 4. Explain consequential uncertainty proportionately, using qualitative comparisons where precise estimates lack evidence.
 
 Evaluate the affected workflow rather than only an isolated control or code change.
