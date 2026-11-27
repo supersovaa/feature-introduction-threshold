@@ -1,13 +1,11 @@
 ---
 name: feature-introduction-threshold
-description: Define or revise functional scope in requirements or design, screening proposals to introduce, retain, simplify, or remove a feature, operation, mode, or behavior for current value, user decision burden, and ongoing costs.
+description: When setting or revising functional scope, weigh the current value, user decision burden, and upkeep of adding, keeping, simplifying, or removing behavior.
 ---
 
 # Feature Introduction Threshold
 
-Use this skill when defining or revising functional scope in requirements or design, including proposals to introduce, retain, simplify, or remove a feature, user operation, mode, or behavior.
-
-This skill targets a single-user AI-agent design workflow.
+In a single-user AI-agent design workflow, apply the same scope decision to adding, retaining, simplifying, or removing a feature, user operation, mode, or behavior.
 
 ## Core rule
 
